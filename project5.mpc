@@ -1,0 +1,53 @@
+project (project3) {
+	exename = iterator
+	
+	specific (make) {
+		compile_flags += -std=c++11
+	}
+	
+	Source_Files {
+		Add_Command.cpp
+		Binary_Command.cpp
+		Divide_Command.cpp
+		Driver.cpp
+		Modulus_Command.cpp
+		Multiply_Command.cpp
+		Number_Command.cpp
+		Parenthesis_Command.cpp
+		Stack_Factory.cpp
+		Subtract_Command.cpp
+	}
+	
+	Template_Files {
+		Array.cpp
+		Dynamic_Array.cpp
+		Stack.cpp
+		Array_Iterator.cpp
+	}
+	
+	Header_Files {
+		Add_Command.h
+		Array.h
+		Array_Iterator.h
+		Binary_Command.h
+		Command.h
+		Divide_Command.h
+		Dynamic_Array.h
+		Factory.h
+		Modulus_Command.h
+		Multiply_Command.h
+		Number_Command.h
+		Parenthesis_Command.h
+		Stack_Factory.h
+		Stack.h
+		Subtract_Command.h
+	}
+	
+	Inline_Files {
+		Array.inl
+		Dynamic_Array.inl
+		Stack.inl
+	}
+}
+
+// to use 'thomas% mwc.pl -type make' then 'thomas% make' then 'a1'
