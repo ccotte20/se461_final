@@ -1,0 +1,31 @@
+project (project5) {
+	exename = iterator
+	
+	specific (make) {
+		compile_flags += -std=c++11
+	}
+	
+	Source_Files {
+		driver.cpp
+	}
+	
+	Template_Files {
+		Array.cpp
+		Array_Iterator.cpp
+		Dynamic_Array.cpp
+		Fixed_Array.cpp
+	}
+	
+	Header_Files {
+		Array.h
+		Array_Iterator.h
+		Dynamic_Array.h
+		Fixed_Array.h
+	}
+	
+	Inline_Files {
+		Array.inl
+		Dynamic_Array.inl
+	}
+}
+// to use 'thomas% mwc.pl -type make' then 'thomas% make' then 'a1'

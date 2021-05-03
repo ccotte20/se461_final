@@ -6,7 +6,7 @@
 // Dynamic_Array
 //
 template <typename T>
-Dynamic_Array <T>::Dynamic_Array (void) : Array<T>()
+Dynamic_Array <T>::Dynamic_Array (void) : Array<T>()//max_size_(DEFAULT_SIZE) Remake dynamic array to hold max_size_
 {
 	max_size_=this->cur_size_;
 }
@@ -24,9 +24,10 @@ Dynamic_Array <T>::Dynamic_Array (const Dynamic_Array <T> & arr) : Array<T>(arr)
 // Dynamic_Array
 //
 template <typename T>
-Dynamic_Array <T>::Dynamic_Array (size_t length, T fill) : Array<T>(length, fill), max_size_(length)
+Dynamic_Array <T>::Dynamic_Array (T fill) : Array<T>()
 {
-	
+	max_size_=this->cur_size_;
+	this->fill(fill);
 }
 
 //

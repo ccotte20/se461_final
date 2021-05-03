@@ -32,10 +32,9 @@ public:
    * Initializing constructor. Fills the contents of the 
    * array with the specified \a fill value.
    *
-   * @param[in]      length        Initial size
    * @param[in]      fill       The fill value.
    */
-  Dynamic_Array (size_t length, T fill);
+  Dynamic_Array (T fill);
 
   /// Destructor.
   ~Dynamic_Array (void);
